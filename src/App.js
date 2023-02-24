@@ -1,8 +1,15 @@
+import Home from "./Home";
+import Sidebar from "./Sidebar";
+import Modal from "./Modal";
+import Context from "./Context";
+
 function App() {
   return (
-    <>
-      <h4>App</h4>
-    </>
+    <Context>
+      <Home />
+      <Modal />
+      <Sidebar />
+    </Context>
   );
 }
 
