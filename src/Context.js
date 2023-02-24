@@ -1,6 +1,6 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
-export const MyContext = createContext();
+const MyContext = createContext();
 
 function Context({ children }) {
   const [showModal, setShowModal] = useState(false);
@@ -15,4 +15,5 @@ function Context({ children }) {
   );
 }
 
+export const useAppContext = () => useContext(MyContext);
 export default Context;

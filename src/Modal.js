@@ -1,9 +1,8 @@
 import { FaTimes } from "react-icons/fa";
-import { MyContext } from "./Context";
-import { useContext } from "react";
+import { useAppContext } from "./Context";
 
 function Modal() {
-  const { showModal, setShowModal } = useContext(MyContext);
+  const { showModal, setShowModal } = useAppContext();
   const handleModal = () => {
     setShowModal(false);
   };

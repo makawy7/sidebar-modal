@@ -1,9 +1,8 @@
 import { FaBars } from "react-icons/fa";
-import { MyContext } from "./Context";
-import { useContext } from "react";
+import { useAppContext } from "./Context";
 
 function Home() {
-  const { setShowModal, setShowSide } = useContext(MyContext);
+  const { setShowModal, setShowSide } = useAppContext();
   const handleModal = () => {
     setShowModal(true);
   };

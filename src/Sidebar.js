@@ -1,11 +1,10 @@
 import logo from "./logo.svg";
 import { FaTimes } from "react-icons/fa";
 import { links, social } from "./data";
-import { MyContext } from "./Context";
-import { useContext } from "react";
+import { useAppContext } from "./Context";
 
 function Sidebar() {
-  const { showSide, setShowSide } = useContext(MyContext);
+  const { showSide, setShowSide } = useAppContext();
   const closeSide = () => {
     setShowSide(false);
   };
